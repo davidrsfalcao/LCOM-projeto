@@ -1,0 +1,122 @@
+\hypertarget{keyboard_8h}{}\section{keyboard.\+h File Reference}
+\label{keyboard_8h}\index{keyboard.\+h@{keyboard.\+h}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{keyboard_8h_a5bdf6cfb570c375192b0d87913b65c57}{kbd\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables K\+BD\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8h_afba3a35bd6a79305e84ab4f33a5ffa7f}{kbd\+\_\+subscribe\+\_\+int} (void)
+\begin{DoxyCompactList}\small\item\em Unsubscribes K\+BD\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8h_a5960c25178b81cfd546ba623815cfb22}{kbd\+\_\+scan\+\_\+c} (int $\ast$apt)
+\begin{DoxyCompactList}\small\item\em reads the key that was pressed \end{DoxyCompactList}\item 
+unsigned short \hyperlink{keyboard_8h_afc181e449b832143de81784e6e4a0bae}{read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+BC} (unsigned long $\ast$data)
+\begin{DoxyCompactList}\small\item\em Read K\+BC responses from Output Buffer. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{keyboard_8h_a5934bc1a6b9c6de87bf9f6d3b1d1f8d0}{K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse} (unsigned char command)
+\begin{DoxyCompactList}\small\item\em Issues mouse command to K\+BC. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{keyboard_8h_a0f9b75d882918222873e81278ecfb991}{issue\+\_\+argument\+\_\+\+K\+BC} (unsigned char argument)
+\begin{DoxyCompactList}\small\item\em Issues argument of any command to K\+BC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{keyboard_8h_a0f9b75d882918222873e81278ecfb991}{}\label{keyboard_8h_a0f9b75d882918222873e81278ecfb991} 
+\index{keyboard.\+h@{keyboard.\+h}!issue\+\_\+argument\+\_\+\+K\+BC@{issue\+\_\+argument\+\_\+\+K\+BC}}
+\index{issue\+\_\+argument\+\_\+\+K\+BC@{issue\+\_\+argument\+\_\+\+K\+BC}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{issue\+\_\+argument\+\_\+\+K\+B\+C()}{issue\_argument\_KBC()}}
+{\footnotesize\ttfamily unsigned short issue\+\_\+argument\+\_\+\+K\+BC (\begin{DoxyParamCaption}\item[{unsigned char}]{argument }\end{DoxyParamCaption})}
+
+
+
+Issues argument of any command to K\+BC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & Stores K\+BC argument from any command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{keyboard_8h_a5934bc1a6b9c6de87bf9f6d3b1d1f8d0}{}\label{keyboard_8h_a5934bc1a6b9c6de87bf9f6d3b1d1f8d0} 
+\index{keyboard.\+h@{keyboard.\+h}!K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse@{K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse}}
+\index{K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse@{K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse()}{KBC\_issue\_command\_mouse()}}
+{\footnotesize\ttfamily unsigned short K\+B\+C\+\_\+issue\+\_\+command\+\_\+mouse (\begin{DoxyParamCaption}\item[{unsigned char}]{command }\end{DoxyParamCaption})}
+
+
+
+Issues mouse command to K\+BC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Stores mouse command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{keyboard_8h_a5960c25178b81cfd546ba623815cfb22}{}\label{keyboard_8h_a5960c25178b81cfd546ba623815cfb22} 
+\index{keyboard.\+h@{keyboard.\+h}!kbd\+\_\+scan\+\_\+c@{kbd\+\_\+scan\+\_\+c}}
+\index{kbd\+\_\+scan\+\_\+c@{kbd\+\_\+scan\+\_\+c}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{kbd\+\_\+scan\+\_\+c()}{kbd\_scan\_c()}}
+{\footnotesize\ttfamily int kbd\+\_\+scan\+\_\+c (\begin{DoxyParamCaption}\item[{int $\ast$}]{apt }\end{DoxyParamCaption})}
+
+
+
+reads the key that was pressed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apt} & the key that was pressed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success or 1 on non-\/success 
+\end{DoxyReturn}
+\hypertarget{keyboard_8h_afba3a35bd6a79305e84ab4f33a5ffa7f}{}\label{keyboard_8h_afba3a35bd6a79305e84ab4f33a5ffa7f} 
+\index{keyboard.\+h@{keyboard.\+h}!kbd\+\_\+subscribe\+\_\+int@{kbd\+\_\+subscribe\+\_\+int}}
+\index{kbd\+\_\+subscribe\+\_\+int@{kbd\+\_\+subscribe\+\_\+int}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{kbd\+\_\+subscribe\+\_\+int()}{kbd\_subscribe\_int()}}
+{\footnotesize\ttfamily int kbd\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes K\+BD\textquotesingle{}s interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{keyboard_8h_a5bdf6cfb570c375192b0d87913b65c57}{}\label{keyboard_8h_a5bdf6cfb570c375192b0d87913b65c57} 
+\index{keyboard.\+h@{keyboard.\+h}!kbd\+\_\+unsubscribe\+\_\+int@{kbd\+\_\+unsubscribe\+\_\+int}}
+\index{kbd\+\_\+unsubscribe\+\_\+int@{kbd\+\_\+unsubscribe\+\_\+int}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{kbd\+\_\+unsubscribe\+\_\+int()}{kbd\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int kbd\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables K\+BD\textquotesingle{}s interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\hypertarget{keyboard_8h_afc181e449b832143de81784e6e4a0bae}{}\label{keyboard_8h_afc181e449b832143de81784e6e4a0bae} 
+\index{keyboard.\+h@{keyboard.\+h}!read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+BC@{read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+BC}}
+\index{read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+BC@{read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+BC}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+B\+C()}{read\_data\_OUTBUF\_from\_KBC()}}
+{\footnotesize\ttfamily unsigned short read\+\_\+data\+\_\+\+O\+U\+T\+B\+U\+F\+\_\+from\+\_\+\+K\+BC (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Read K\+BC responses from Output Buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Stores K\+BC Response (A\+CK, R\+E\+S\+E\+ND, E\+R\+R\+OR)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success or non-\/zero otherwise 
+\end{DoxyReturn}

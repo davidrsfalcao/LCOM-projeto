@@ -1,0 +1,98 @@
+\hypertarget{game_8h}{}\section{game.\+h File Reference}
+\label{game_8h}\index{game.\+h@{game.\+h}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$minix/com.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lmlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}imgs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}space\+\_\+ship.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}asteroid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}collisions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game\+\_\+over.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}numbers.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{game_8h_a231e4dd52378c7442957e86cb5547465}{game} ()
+\begin{DoxyCompactList}\small\item\em the game \end{DoxyCompactList}\item 
+void \hyperlink{game_8h_a4216283c98a496768ae81801c780e008}{draw} (\hyperlink{structspace__ship}{space\+\_\+ship} nv1, \hyperlink{structasteroid}{asteroid} ast1, \hyperlink{structasteroid}{asteroid} ast2)
+\begin{DoxyCompactList}\small\item\em draws the objects that will be in the game \end{DoxyCompactList}\item 
+void \hyperlink{game_8h_ad04cb4e48ce8963b5fab5ed5fdaf29a2}{pontuation\+\_\+atual} ()
+\begin{DoxyCompactList}\small\item\em shows the player\textquotesingle{}s pontuation updated on every frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{game_8h_a4216283c98a496768ae81801c780e008}{}\label{game_8h_a4216283c98a496768ae81801c780e008} 
+\index{game.\+h@{game.\+h}!draw@{draw}}
+\index{draw@{draw}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{\hyperlink{structspace__ship}{space\+\_\+ship}}]{nv1,  }\item[{\hyperlink{structasteroid}{asteroid}}]{ast1,  }\item[{\hyperlink{structasteroid}{asteroid}}]{ast2 }\end{DoxyParamCaption})}
+
+
+
+draws the objects that will be in the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nv1} & spaceship \\
+\hline
+{\em ast1} & one of the asteroids \\
+\hline
+{\em ast2} & one of the asteroids \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{game_8h_a4216283c98a496768ae81801c780e008_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{game_8h_a231e4dd52378c7442957e86cb5547465}{}\label{game_8h_a231e4dd52378c7442957e86cb5547465} 
+\index{game.\+h@{game.\+h}!game@{game}}
+\index{game@{game}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{game()}{game()}}
+{\footnotesize\ttfamily int game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the game 
+
+\begin{DoxyReturn}{Returns}
+0 on success or non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a231e4dd52378c7442957e86cb5547465_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{game_8h_ad04cb4e48ce8963b5fab5ed5fdaf29a2}{}\label{game_8h_ad04cb4e48ce8963b5fab5ed5fdaf29a2} 
+\index{game.\+h@{game.\+h}!pontuation\+\_\+atual@{pontuation\+\_\+atual}}
+\index{pontuation\+\_\+atual@{pontuation\+\_\+atual}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{pontuation\+\_\+atual()}{pontuation\_atual()}}
+{\footnotesize\ttfamily void pontuation\+\_\+atual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+shows the player\textquotesingle{}s pontuation updated on every frame 
+
+shows the player\textquotesingle{}s pontuation updated on every frame Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{game_8h_ad04cb4e48ce8963b5fab5ed5fdaf29a2_cgraph}
+\end{center}
+\end{figure}

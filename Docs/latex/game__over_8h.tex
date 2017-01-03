@@ -1,0 +1,97 @@
+\hypertarget{game__over_8h}{}\section{game\+\_\+over.\+h File Reference}
+\label{game__over_8h}\index{game\+\_\+over.\+h@{game\+\_\+over.\+h}}
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}imgs\+\_\+game\+\_\+over.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}numbers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cursor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structimage}{image}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structimage}{image} \hyperlink{game__over_8h_a183300a528553b66677f173c07c7170e}{image}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{game__over_8h_ae1a2e26afd9fddd52abd9795800fbfab}{game\+\_\+over} ()
+\begin{DoxyCompactList}\small\item\em when a player loses the game\+\_\+over menu will appear \end{DoxyCompactList}\item 
+void \hyperlink{game__over_8h_a86a18f8e6c99fff9f30c8bbc875516fc}{draw\+\_\+image} (\hyperlink{structimage}{image} t1)
+\begin{DoxyCompactList}\small\item\em draws the image of the game\+\_\+over menu \end{DoxyCompactList}\item 
+void \hyperlink{game__over_8h_a83353e5628621f3e651f8bcbd49efc02}{pontuation} ()
+\begin{DoxyCompactList}\small\item\em shows the pontuation that the player achieve \end{DoxyCompactList}\item 
+void \hyperlink{game__over_8h_a41942558c8edf2e425cbdef68805b5ee}{draw\+\_\+option} (\hyperlink{structimage}{image} ti, unsigned short option)
+\begin{DoxyCompactList}\small\item\em draws the options on the Game-\/over menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{game__over_8h_a183300a528553b66677f173c07c7170e}{}\label{game__over_8h_a183300a528553b66677f173c07c7170e} 
+\index{game\+\_\+over.\+h@{game\+\_\+over.\+h}!image@{image}}
+\index{image@{image}!game\+\_\+over.\+h@{game\+\_\+over.\+h}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structimage}{image} \hyperlink{structimage}{image}}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{game__over_8h_a86a18f8e6c99fff9f30c8bbc875516fc}{}\label{game__over_8h_a86a18f8e6c99fff9f30c8bbc875516fc} 
+\index{game\+\_\+over.\+h@{game\+\_\+over.\+h}!draw\+\_\+image@{draw\+\_\+image}}
+\index{draw\+\_\+image@{draw\+\_\+image}!game\+\_\+over.\+h@{game\+\_\+over.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+image()}{draw\_image()}}
+{\footnotesize\ttfamily void draw\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{t1 }\end{DoxyParamCaption})}
+
+
+
+draws the image of the game\+\_\+over menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & image that will be draw \\
+\hline
+\end{DoxyParams}
+\hypertarget{game__over_8h_a41942558c8edf2e425cbdef68805b5ee}{}\label{game__over_8h_a41942558c8edf2e425cbdef68805b5ee} 
+\index{game\+\_\+over.\+h@{game\+\_\+over.\+h}!draw\+\_\+option@{draw\+\_\+option}}
+\index{draw\+\_\+option@{draw\+\_\+option}!game\+\_\+over.\+h@{game\+\_\+over.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+option()}{draw\_option()}}
+{\footnotesize\ttfamily void draw\+\_\+option (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{ti,  }\item[{unsigned short}]{option }\end{DoxyParamCaption})}
+
+
+
+draws the options on the Game-\/over menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ti} & image of the option that will be draw \\
+\hline
+{\em option} & the number that identifies the options drawn \\
+\hline
+\end{DoxyParams}
+\hypertarget{game__over_8h_ae1a2e26afd9fddd52abd9795800fbfab}{}\label{game__over_8h_ae1a2e26afd9fddd52abd9795800fbfab} 
+\index{game\+\_\+over.\+h@{game\+\_\+over.\+h}!game\+\_\+over@{game\+\_\+over}}
+\index{game\+\_\+over@{game\+\_\+over}!game\+\_\+over.\+h@{game\+\_\+over.\+h}}
+\subsubsection{\texorpdfstring{game\+\_\+over()}{game\_over()}}
+{\footnotesize\ttfamily int game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+when a player loses the game\+\_\+over menu will appear 
+
+\begin{DoxyReturn}{Returns}
+0 on success or 1 on non-\/success 
+\end{DoxyReturn}
+\hypertarget{game__over_8h_a83353e5628621f3e651f8bcbd49efc02}{}\label{game__over_8h_a83353e5628621f3e651f8bcbd49efc02} 
+\index{game\+\_\+over.\+h@{game\+\_\+over.\+h}!pontuation@{pontuation}}
+\index{pontuation@{pontuation}!game\+\_\+over.\+h@{game\+\_\+over.\+h}}
+\subsubsection{\texorpdfstring{pontuation()}{pontuation()}}
+{\footnotesize\ttfamily void pontuation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+shows the pontuation that the player achieve 
+

@@ -1,0 +1,74 @@
+\hypertarget{mouse_8h}{}\section{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.\+h@{mouse.\+h}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/com.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mouse_8h_a99506573209b197b84ee22a228b89fbd}{mouse\+\_\+subscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{mouse_8h_abb62339e13d96f9050f69a71428f8eb9}{mouse\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Mouse interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{mouse_8h_a0b0da21bbdff62b7b28e9af7ec3d0d76}{hook\+\_\+id\+\_\+mouse} = 12
+\item 
+unsigned long \hyperlink{mouse_8h_adbf067b12d66e0b4c1afe05331fe4edb}{packet} \mbox{[}3\mbox{]}
+\item 
+static int \hyperlink{mouse_8h_a2e61911f80e72e76b6906f5044d86b76}{byte\+\_\+number} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{mouse_8h_a99506573209b197b84ee22a228b89fbd}{}\label{mouse_8h_a99506573209b197b84ee22a228b89fbd} 
+\index{mouse.\+h@{mouse.\+h}!mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}}
+\index{mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{mouse\+\_\+subscribe\+\_\+int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\hypertarget{mouse_8h_abb62339e13d96f9050f69a71428f8eb9}{}\label{mouse_8h_abb62339e13d96f9050f69a71428f8eb9} 
+\index{mouse.\+h@{mouse.\+h}!mouse\+\_\+unsubscribe@{mouse\+\_\+unsubscribe}}
+\index{mouse\+\_\+unsubscribe@{mouse\+\_\+unsubscribe}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{mouse\+\_\+unsubscribe()}{mouse\_unsubscribe()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{mouse_8h_a2e61911f80e72e76b6906f5044d86b76}{}\label{mouse_8h_a2e61911f80e72e76b6906f5044d86b76} 
+\index{mouse.\+h@{mouse.\+h}!byte\+\_\+number@{byte\+\_\+number}}
+\index{byte\+\_\+number@{byte\+\_\+number}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{byte\+\_\+number}{byte\_number}}
+{\footnotesize\ttfamily int byte\+\_\+number = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{mouse_8h_a0b0da21bbdff62b7b28e9af7ec3d0d76}{}\label{mouse_8h_a0b0da21bbdff62b7b28e9af7ec3d0d76} 
+\index{mouse.\+h@{mouse.\+h}!hook\+\_\+id\+\_\+mouse@{hook\+\_\+id\+\_\+mouse}}
+\index{hook\+\_\+id\+\_\+mouse@{hook\+\_\+id\+\_\+mouse}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{hook\+\_\+id\+\_\+mouse}{hook\_id\_mouse}}
+{\footnotesize\ttfamily int hook\+\_\+id\+\_\+mouse = 12\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{mouse_8h_adbf067b12d66e0b4c1afe05331fe4edb}{}\label{mouse_8h_adbf067b12d66e0b4c1afe05331fe4edb} 
+\index{mouse.\+h@{mouse.\+h}!packet@{packet}}
+\index{packet@{packet}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{packet}{packet}}
+{\footnotesize\ttfamily unsigned long packet\mbox{[}3\mbox{]}}
+

@@ -1,0 +1,41 @@
+\hypertarget{mouse_8c}{}\section{mouse.\+c File Reference}
+\label{mouse_8c}\index{mouse.\+c@{mouse.\+c}}
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mouse_8c_a99506573209b197b84ee22a228b89fbd}{mouse\+\_\+subscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{mouse_8c_abb62339e13d96f9050f69a71428f8eb9}{mouse\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Mouse interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{mouse_8c_a99506573209b197b84ee22a228b89fbd}{}\label{mouse_8c_a99506573209b197b84ee22a228b89fbd} 
+\index{mouse.\+c@{mouse.\+c}!mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}}
+\index{mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}!mouse.\+c@{mouse.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+subscribe\+\_\+int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\hypertarget{mouse_8c_abb62339e13d96f9050f69a71428f8eb9}{}\label{mouse_8c_abb62339e13d96f9050f69a71428f8eb9} 
+\index{mouse.\+c@{mouse.\+c}!mouse\+\_\+unsubscribe@{mouse\+\_\+unsubscribe}}
+\index{mouse\+\_\+unsubscribe@{mouse\+\_\+unsubscribe}!mouse.\+c@{mouse.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+unsubscribe()}{mouse\_unsubscribe()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
