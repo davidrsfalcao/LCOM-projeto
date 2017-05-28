@@ -1,6 +1,0 @@
-<map id="draw" name="draw">
-<area shape="rect" id="node2" href="$space__ship_8h.html#ae4d0cb9056d3e9ea3918ba7d9a6894fc" title="draws a spaceship " alt="" coords="105,5,222,31"/>
-<area shape="rect" id="node3" href="$asteroid_8h.html#afac0780a5eac49e23fe651a63b575db7" title="draw the asteroids " alt="" coords="108,55,219,80"/>
-<area shape="rect" id="node4" href="$game_8c.html#ad04cb4e48ce8963b5fab5ed5fdaf29a2" title="draw the atual score " alt="" coords="104,104,224,129"/>
-<area shape="rect" id="node5" href="$group__vbe.html#ga4977ce5be211025d9fd499e2f849f684" title="xpm_cre" alt="" coords="272,104,344,129"/>
-</map>
